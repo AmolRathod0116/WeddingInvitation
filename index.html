@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full View Background Image with Address Link</title>
+    <title>Wedding Venue Invitation</title>
     <style>
         body, html {
             margin: 0;
@@ -12,45 +12,49 @@
             overflow: hidden;
         }
         .background-image {
-            position: fixed; /* Use absolute for scrollable content */
+            position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             width: 100%;
             height: 100%;
-            object-fit: contain; /* Ensures the image is fully visible */
-            object-position: center; /* Centers the image */
+            object-fit: cover;
         }
         .content {
-            position: relative;
-            z-index: 2; /* Ensures content is above the image */
-            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
-            top: 50%; /* Center the content vertically */
-            transform: translateY(-50%);
+            color: white;
+            z-index: 2;
+            padding: 0 20px; /* Add padding for better mobile display */
         }
         .address-link {
-            color: #FFF; /* White text color for visibility */
-            text-decoration: underline; /* Underline to indicate it's clickable */
-            margin-top: 20px; /* Some space from the text above */
-            display: block; /* Make it a block to center text */
+            color: #FFF;
+            text-decoration: underline;
+            margin-top: 20px;
+            display: block;
         }
-        .content
-        {
-            margin-top: 150px;
-        }
-        .content a{
+        .address-link:hover {
             color: red;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .content {
+                padding: 0 10px; /* Adjust padding for smaller screens */
+            }
         }
     </style>
 </head>
 <body>
 
-<img src="img/Invitaion.png" class="background-image" alt="Background Image">
+<img src="img/Invitaion.png" class="background-image" alt="Wedding Invitation Image">
 
 <div class="content">
-    <a href="https://maps.app.goo.gl/jvjjoYdPj2C8Gr9dA" target="_blank" class="address-link">आमच्या लग्नाच्या स्थळासाठी येथे क्लिक करा </a>
+    <a href="https://maps.app.goo.gl/jvjjoYdPj2C8Gr9dA" target="_blank" class="address-link">आमच्या लग्नाच्या स्थळासाठी येथे क्लिक करा</a>
 </div>
 
 </body>
