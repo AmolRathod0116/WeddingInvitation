@@ -22,29 +22,32 @@
             object-fit: cover;
         }
         .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
+            position: relative;
             z-index: 2;
-            padding: 0 20px; /* Add padding for better mobile display */
+            color: white;
+            text-align: center;
+            margin-top: 50%; /* Center the content vertically */
+            transform: translateY(-50%);
         }
         .address-link {
             color: #FFF;
             text-decoration: underline;
-            margin-top: 20px;
             display: block;
+            margin-top: 20px;
         }
+<<<<<<< HEAD
         .address-link:hover {
-            color: red;
+            color: red; /* Change color on hover */
+=======
+        .content
+        {
+            margin-top: 150px;
+>>>>>>> 8da30d2ae9a835b5d2206a24abfecf0b9488c249
         }
 
-        /* Responsive Styles */
-        @media screen and (max-width: 768px) {
+        @media (max-width: 600px) {
             .content {
-                padding: 0 10px; /* Adjust padding for smaller screens */
+                margin-top: 30vh; /* Adjusted margin for mobile devices */
             }
         }
     </style>
@@ -55,8 +58,6 @@
 
 <div class="content">
     <a href="https://maps.app.goo.gl/jvjjoYdPj2C8Gr9dA" target="_blank" class="address-link">आमच्या लग्नाच्या स्थळासाठी येथे क्लिक करा</a>
-    <h1>Welcome to Our Website</h1>
-    <p>This is a sample text overlaying the background image.</p>
 </div>
 
 </body>
